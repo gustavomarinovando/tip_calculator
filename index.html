@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Calculadora de propinas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="container">
+      <h1>Calculadora de Propinas</h1>
+      <hr>
+      <div>
+        <label><strong>Cuenta Total:</strong></label>
+        <input type="text" placeholder="Ingresa la cuenta total..." id="bill_total">
+      </div>
+      <div>
+        <label><strong>Propina:</strong></label>
+        <input type="range" value="0" id="tip_input" step="5">
+        <span id="tip">0 %</span>
+      </div>
+      <div>
+        <label><strong>Dividir (numero de personas):</strong></label>
+        <input type="range" value="1" min="1" max="10" id="split_input">
+        <span id="people">1</span>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <label><strong>Nueva Cuenta (por persona):</strong></label><span id="person_bill"></span>
+        </div>
+        <div>
+          <label><strong>Propina (por persona):</strong></label><span id="person_tip"></span>
+        </div>
+        <div>
+          <label><strong>Total (por persona):</strong></label><span id="person_total"></span>
+        </div>
+      </div>
+    </div>
+  <script src="script.js"></script>
+  </body>
+</html>
